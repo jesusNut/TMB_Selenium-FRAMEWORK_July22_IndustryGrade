@@ -1,9 +1,15 @@
+# 1. use this Dockerfile [named - Dockerfile_old] to create an image [named -abhishektemp:1.0].
+# 2. from that image [named -abhishektemp:1.0] create a container (which will download all dependencies and run the tests as per executeTests.sh in ENTRYPOINT instuction).
+# 3. save the state of the container created in step 2 as an image (& name/tag it as 'java11-maven3.6.3-all_dependencies') using docker's 'commit' & 'tag' command.
+# 4. the image created in step 3 named 'java11-maven3.6.3-all_dependencies' will have -> Everything from this file (including maven + java 11 + Framework Files + ENTRYPOINT script called 'executeTests.sh')+ All the dependencies.
+# 5. Now the image created in step 3 named 'java11-maven3.6.3-all_dependencies' will be used as base image in Dockerfile [named - 'Dockerfile', present in the Selenium Framework]
+
 FROM maven:3.6.3-jdk-11
 COPY src  home/TMB_Selenium-FRAMEWORK_July22/src
 COPY pom.xml home/TMB_Selenium-FRAMEWORK_July22/pom.xml
 COPY extent-test-output home/TMB_Selenium-FRAMEWORK_July22/extent-test-output
 COPY print-page-to-pdf-output home/TMB_Selenium-FRAMEWORK_July22/print-page-to-pdf-output
-COPY test-output home/TMB_Selenium-FRAMEWORK_July22/print-page-to-pdf-output
+COPY test-output home/TMB_Selenium-FRAMEWORK_July22/test-output
 COPY executeTests.sh home/TMB_Selenium-FRAMEWORK_July22/executeTests.sh
 RUN chmod +x home/TMB_Selenium-FRAMEWORK_July22/executeTests.sh
 WORKDIR /home/TMB_Selenium-FRAMEWORK_July22
