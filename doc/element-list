@@ -1,0 +1,16 @@
+com.jesusnut.annotations
+com.jesusnut.base
+com.jesusnut.config
+com.jesusnut.constants
+com.jesusnut.driver
+com.jesusnut.enums
+com.jesusnut.exception
+com.jesusnut.helper
+com.jesusnut.listeners
+com.jesusnut.pages
+com.jesusnut.pages.pagecomponents.myaccountspagecomponents
+com.jesusnut.reports.extentreports
+com.jesusnut.testdataPojo.exceltestdatamapper
+com.jesusnut.testdataPojo.jsontestdatamapper
+com.jesusnut.tests
+com.jesusnut.utils

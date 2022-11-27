@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression_Suite" parallel="methods" thread-count="4">
+
+	<listeners>
+		<listener
+			class-name="com.jesusnut.listeners.ExtentReportListener"></listener>
+		<listener
+			class-name="com.jesusnut.listeners.MethodInterceptor"></listener>
+	</listeners>
+
+	<test name="Regression_Test">
+		<classes>
+			<class name="com.jesusnut.tests.ProductInfoTest" />
+			<class name="com.jesusnut.tests.MyAccountsPageTest" />
+			<class name="com.jesusnut.tests.AccountSuccessTest" />
+			<class name="com.jesusnut.tests.RegisterAccountTest" />
+			<class name="com.jesusnut.tests.LoginPageTest" />
+			<class name="com.jesusnut.tests.SearchPageTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

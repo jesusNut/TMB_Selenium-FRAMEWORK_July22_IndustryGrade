@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Smoke_Suite" parallel="methods" thread-count="4">
+
+	<listeners>
+		<listener
+			class-name="com.jesusnut.listeners.MethodInterceptor"></listener>
+		<listener
+			class-name="com.jesusnut.listeners.ExtentReportListener"></listener>
+	</listeners>
+
+
+	<test name="Smoke_Test">
+		<classes>
+			<class name="com.jesusnut.tests.GenericTest" />
+		</classes>
+	</test> <!-- Smoke_Test -->
+
+
+</suite> <!-- Suite -->
