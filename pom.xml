@@ -14,6 +14,7 @@
         <aspectj.version>1.9.9.1</aspectj.version>
         <testNG.version>7.4.0</testNG.version>
         <selenium.version>4.5.0</selenium.version>
+        <selenium-devtools.version>4.8.2</selenium-devtools.version>
         <webdrivermanager.version>5.3.0</webdrivermanager.version>
         <extentreports.version>5.0.9</extentreports.version>
         <poi.version>5.2.2</poi.version>
@@ -139,7 +140,7 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testNG.version}</version>
-            <scope>compile</scope> 
+            <scope>compile</scope>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -258,7 +259,15 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
-            <version>${slf4jsimple.version}</version>         
+            <version>${slf4jsimple.version}</version>
+        </dependency>
+
+        <!-- To run Chrome Dev tool related tests on chrome browser version 111.XXXX-->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-devtools-v111 -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-devtools-v111</artifactId>
+            <version>${selenium-devtools.version}</version>
         </dependency>
 
 

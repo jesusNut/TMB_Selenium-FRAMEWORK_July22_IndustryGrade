@@ -88,8 +88,10 @@ public final class BrowserOptionsFactory {
 			HashMap<String, Object> prefs = setChromiumBasedBrowserPermissions();
 
 			driverOptions = new ChromeOptions();
+
 			driverOptions.setCapability(BROWSERNAME, browserName);
 			driverOptions.setCapability("se:recordVideo", true);
+			((ChromeOptions) driverOptions).addArguments("--remote-allow-origins=*");
 			((ChromeOptions) driverOptions).setExperimentalOption("excludeSwitches",
 					Collections.singletonList("enable-automation"));
 			((ChromeOptions) driverOptions).setAcceptInsecureCerts(true);
