@@ -44,7 +44,7 @@ public final class PDFUtils {
 		} catch (IOException e) {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Issue of IO operation while printing page to PDF",
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Issue of IO operation while printing page to PDF",
 					e);
 		}
 	}
@@ -61,7 +61,7 @@ public final class PDFUtils {
 		} catch (IOException e) {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Issue of IO operation while printing page to PDF",
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Issue of IO operation while printing page to PDF",
 					e);
 		}
 	}
@@ -71,7 +71,7 @@ public final class PDFUtils {
 		if (!ConfigFactory.hasHeadlessRunModeStatus()) {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> <b>Feature to print page to pdf is available only in HEADLESS MODE.</b>");
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> <b>Feature to print page to pdf is available only in HEADLESS MODE.</b>");
 		}
 
 	}

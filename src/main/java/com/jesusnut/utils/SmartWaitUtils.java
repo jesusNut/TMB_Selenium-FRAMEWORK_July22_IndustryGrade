@@ -41,7 +41,7 @@ public final class SmartWaitUtils {
 				wait.until(jsLoad);
 			} catch (Throwable error) {
 				throw new FrameworkException(
-						"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Timeout waiting for page load (Javascript). ("
+						"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Timeout waiting for page load (Javascript). ("
 								+ SMARTWAITUTILS_TIMEOUT + "seconds)",
 						error);
 			}
@@ -65,7 +65,7 @@ public final class SmartWaitUtils {
 				wait.until(jQueryLoad);
 			} catch (Throwable error) {
 				throw new FrameworkException(
-						"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Timeout waiting for JQuery load (Javascript). ("
+						"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Timeout waiting for JQuery load (Javascript). ("
 								+ SMARTWAITUTILS_TIMEOUT + "seconds)",
 						error);
 			}
@@ -90,7 +90,7 @@ public final class SmartWaitUtils {
 				wait.until(angularLoad);
 			} catch (Throwable error) {
 				throw new FrameworkException(
-						"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Timeout waiting for Angular load. ("
+						"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Timeout waiting for Angular load. ("
 								+ SMARTWAITUTILS_TIMEOUT + "seconds)",
 						error);
 			}
@@ -104,7 +104,7 @@ public final class SmartWaitUtils {
 			Thread.sleep(seconds * 1000);
 		} catch (InterruptedException e) {
 
-			throw new FrameworkException("JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Sleep Interrupted. ", e);
+			throw new FrameworkException("JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Sleep Interrupted. ", e);
 		}
 
 	}

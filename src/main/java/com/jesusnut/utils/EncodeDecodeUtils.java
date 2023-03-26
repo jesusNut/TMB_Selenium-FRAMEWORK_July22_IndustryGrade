@@ -56,7 +56,7 @@ public final class EncodeDecodeUtils {
 		} catch (Exception e) {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Error while encrypting: issue in method generateIV() in com.jesusnut.utils.EncodeDecodeUtils",
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Error while encrypting: issue in method generateIV() in com.jesusnut.utils.EncodeDecodeUtils",
 					e);
 		}
 
@@ -78,7 +78,7 @@ public final class EncodeDecodeUtils {
 
 		} catch (Exception e) {
 
-			throw new FrameworkException("JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Error while encrypting: ",
+			throw new FrameworkException("JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Error while encrypting: ",
 					e);
 
 		}
@@ -101,7 +101,7 @@ public final class EncodeDecodeUtils {
 
 		} catch (Exception e) {
 
-			throw new FrameworkException("JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Error while decrypting",
+			throw new FrameworkException("JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Error while decrypting",
 					e);
 		}
 

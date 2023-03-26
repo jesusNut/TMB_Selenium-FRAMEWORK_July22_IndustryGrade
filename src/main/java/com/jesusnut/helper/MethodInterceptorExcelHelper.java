@@ -76,13 +76,13 @@ public final class MethodInterceptorExcelHelper {
 		catch (FileNotFoundException e) {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Test Runner excel file could not be found. Please check Test runner excel file path in com.jesusnut.constants.FrameworkConstants and/or validate the location of Test Runner excel file in Project",
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Test Runner excel file could not be found. Please check Test runner excel file path in com.jesusnut.constants.FrameworkConstants and/or validate the location of Test Runner excel file in Project",
 					e);
 
 		} catch (IOException e) {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Issues in input/output operation in TestRunner Excel file data.",
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Issues in input/output operation in TestRunner Excel file data.",
 					e);
 
 		}

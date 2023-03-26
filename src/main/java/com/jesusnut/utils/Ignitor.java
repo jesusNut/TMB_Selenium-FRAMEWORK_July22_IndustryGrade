@@ -110,7 +110,7 @@ public final class Ignitor {
 			return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 		} else {
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Wrong Wait Strategy provided.");
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Wrong Wait Strategy provided.");
 		}
 
 	}
@@ -139,7 +139,7 @@ public final class Ignitor {
 			return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
 		} else {
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Wrong Wait Strategy provided.");
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Wrong Wait Strategy provided.");
 		}
 
 	}
@@ -163,7 +163,7 @@ public final class Ignitor {
 					ExpectedConditions.elementToBeClickable(locator)));
 		} catch (org.openqa.selenium.TimeoutException e) {
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Expected condition failed: Element located by By.xpath: //a[text()='Running Windows Network Diagnostics'] either not visible  && present OR Element not clickable.",
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Expected condition failed: Element located by By.xpath: //a[text()='Running Windows Network Diagnostics'] either not visible  && present OR Element not clickable.",
 					e);
 		}
 
@@ -195,7 +195,7 @@ public final class Ignitor {
 
 		catch (Exception e) {
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Could not find the webelement specified by locator : ["
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Could not find the webelement specified by locator : ["
 							+ locator.toString() + " ] using Wait Strategy : [ " + waitStrategy.toString() + " ].",
 					e);
 		}
@@ -221,7 +221,7 @@ public final class Ignitor {
 
 		catch (Exception e) {
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Could not find the webelement(s) specified by locator : ["
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Could not find the webelement(s) specified by locator : ["
 							+ locator.toString() + " ] using Wait Strategy : [ " + waitStrategy.toString() + " ].",
 					e);
 		}
@@ -529,7 +529,7 @@ public final class Ignitor {
 		else {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> 'doActionsScrollToElement(By locator, String webElementName)' is applicable ONLY for driver instances that extends ChromiumDriver class.\nReview if you are running tests on Firefox or Safari.");
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> 'doActionsScrollToElement(By locator, String webElementName)' is applicable ONLY for driver instances that extends ChromiumDriver class.\nReview if you are running tests on Firefox or Safari.");
 		}
 
 	}
@@ -546,7 +546,7 @@ public final class Ignitor {
 		else {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> 'doActionsScrollDownByAmount(int amount)' is applicable ONLY for driver instances that extends ChromiumDriver class.\nReview if you are running tests on Firefox or Safari.");
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> 'doActionsScrollDownByAmount(int amount)' is applicable ONLY for driver instances that extends ChromiumDriver class.\nReview if you are running tests on Firefox or Safari.");
 		}
 
 	}
@@ -564,7 +564,7 @@ public final class Ignitor {
 		else {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> 'doActionsScrollUpByAmount(int amount)' is applicable ONLY for driver instances that extends ChromiumDriver class.\nReview if you are running tests on Firefox or Safari.");
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> 'doActionsScrollUpByAmount(int amount)' is applicable ONLY for driver instances that extends ChromiumDriver class.\nReview if you are running tests on Firefox or Safari.");
 		}
 
 	}
@@ -582,7 +582,7 @@ public final class Ignitor {
 		else {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> 'doActionsScrollRightByAmount(int amount)' is applicable ONLY for driver instances that extends ChromiumDriver class.\nReview if you are running tests on Firefox or Safari.");
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> 'doActionsScrollRightByAmount(int amount)' is applicable ONLY for driver instances that extends ChromiumDriver class.\nReview if you are running tests on Firefox or Safari.");
 		}
 
 	}
@@ -600,7 +600,7 @@ public final class Ignitor {
 		else {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> 'doActionsScrollLeftByAmount(int amount)' is applicable ONLY for driver instances that extends ChromiumDriver class.\nReview if you are running tests on Firefox or Safari.");
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> 'doActionsScrollLeftByAmount(int amount)' is applicable ONLY for driver instances that extends ChromiumDriver class.\nReview if you are running tests on Firefox or Safari.");
 		}
 
 	}
@@ -615,7 +615,7 @@ public final class Ignitor {
 
 		} catch (AWTException e) {
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Issue with Robot class method - 'doRobotPressKey(int keyId, String keyName)'.",
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Issue with Robot class method - 'doRobotPressKey(int keyId, String keyName)'.",
 					e);
 		}
 
@@ -631,7 +631,7 @@ public final class Ignitor {
 
 		} catch (AWTException e) {
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Issue with Robot class method - 'doRobotReleaseKey(int keyId, String keyName)'.",
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Issue with Robot class method - 'doRobotReleaseKey(int keyId, String keyName)'.",
 					e);
 		}
 
@@ -648,7 +648,7 @@ public final class Ignitor {
 			robot.keyRelease(keyId);
 		} catch (AWTException e) {
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Issue with Robot class method - 'doRobotPressAndReleaseKey(int keyId, String keyName)'.",
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Issue with Robot class method - 'doRobotPressAndReleaseKey(int keyId, String keyName)'.",
 					e);
 		}
 
@@ -907,7 +907,7 @@ public final class Ignitor {
 		if (!present) {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> value to be selected not present in dropdown");
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> value to be selected not present in dropdown");
 
 		}
 
@@ -935,7 +935,7 @@ public final class Ignitor {
 		if (!present) {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> value to be selected not present in the list of webelements specified by locator");
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> value to be selected not present in the list of webelements specified by locator");
 
 		}
 
@@ -1107,7 +1107,7 @@ public final class Ignitor {
 				} catch (InterruptedException e) {
 
 					throw new FrameworkException(
-							"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Thread.sleep() Interrupted.", e);
+							"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Thread.sleep() Interrupted.", e);
 				}
 			}
 		}
@@ -1159,7 +1159,7 @@ public final class Ignitor {
 		else {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Could not find any window/tab containing title fraction : ["
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Could not find any window/tab containing title fraction : ["
 							+ titleFraction + "]");
 
 		}

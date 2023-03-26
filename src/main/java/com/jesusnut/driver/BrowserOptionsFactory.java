@@ -41,7 +41,7 @@ public final class BrowserOptionsFactory {
 	private static final String ARG_DISABLE_SANDBOX = "--no-sandbox";
 	private static final String ARG_SET_WINDOW_SIZE_1920X1080 = "--window-size=1920,1080";
 	private static final String BROWSERNAME = "browserName";
-	private static final String CUSTOM_EXCEPTION_STRING = "JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] supports only 'firefox'/'edge'/'chrome' at the moment. Please enter valid Browser value";
+	private static final String CUSTOM_EXCEPTION_STRING = "JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] supports only 'firefox'/'edge'/'chrome' at the moment. Please enter valid Browser value";
 
 	/**
 	 * Provides browser options (capabilities) to WebDriver instance in

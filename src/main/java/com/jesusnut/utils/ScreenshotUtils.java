@@ -39,7 +39,7 @@ public final class ScreenshotUtils {
 		} catch (IOException e) {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Issue while taking screenshot of a failed step ",
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Issue while taking screenshot of a failed step ",
 					e);
 		}
 

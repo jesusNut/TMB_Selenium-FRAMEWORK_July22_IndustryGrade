@@ -52,7 +52,7 @@ public final class RemoteDriverFactory {
 		} catch (MalformedURLException | SessionNotCreatedException e) {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>>  Probable cause >>> \n 1. Remote URL{[remoteURL] key through System properties/System environment/Config.properties files} is a malformed URL/invalid address of remote server. \n 2. Issue with capabilities",
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>>  Probable cause >>> \n 1. Remote URL{[remoteURL] key through System properties/System environment/Config.properties files} is a malformed URL/invalid address of remote server. \n 2. Issue with capabilities",
 					e);
 
 		}

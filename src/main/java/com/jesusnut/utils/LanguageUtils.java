@@ -61,7 +61,7 @@ public final class LanguageUtils {
 		else {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> You are sending null value as @param to method [removeAccent(String)] in com.jesusnut.utils.LanguageUtils");
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> You are sending null value as @param to method [removeAccent(String)] in com.jesusnut.utils.LanguageUtils");
 		}
 
 	}
@@ -77,7 +77,7 @@ public final class LanguageUtils {
 		else {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> You are sending null value as @param to method [convertCharset_ISO_8859_1_To_UTF8(String)] in com.jesusnut.utils.LanguageUtils");
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> You are sending null value as @param to method [convertCharset_ISO_8859_1_To_UTF8(String)] in com.jesusnut.utils.LanguageUtils");
 		}
 	}
 
@@ -91,7 +91,7 @@ public final class LanguageUtils {
 		else {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> You are sending null value as @param to method [convertCharset_UTF8_To_ISO_8859_1(String)] in com.jesusnut.utils.LanguageUtils");
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> You are sending null value as @param to method [convertCharset_UTF8_To_ISO_8859_1(String)] in com.jesusnut.utils.LanguageUtils");
 		}
 	}
 

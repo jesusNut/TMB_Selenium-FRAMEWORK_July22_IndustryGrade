@@ -210,7 +210,7 @@ public final class BidiUtils {
 
 		if (!(TLDriverManager.getDriver() instanceof ChromiumDriver))
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Bidi protocol supports only ChromiumDriver at this moment. Please use Chrome or Edge browsers only.");
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Bidi protocol supports only ChromiumDriver at this moment. Please use Chrome or Edge browsers only.");
 
 	}
 
@@ -222,7 +222,7 @@ public final class BidiUtils {
 			return "msedge";
 		} else {
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Bidi protocol supports only ChromiumDriver at this moment. Please use Chrome or Edge browsers only.");
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Bidi protocol supports only ChromiumDriver at this moment. Please use Chrome or Edge browsers only.");
 		}
 	}
 

@@ -42,7 +42,7 @@ public final class FrameworkConstants {
 				Files.createDirectory(printPageToPDFDirectory);
 			} catch (IOException e) {
 				throw new FrameworkException(
-						"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> IO issue while operation of checking if 'printPageToPDFDirectory' exists and then creating it.");
+						"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> IO issue while operation of checking if 'printPageToPDFDirectory' exists and then creating it.");
 			}
 		}
 

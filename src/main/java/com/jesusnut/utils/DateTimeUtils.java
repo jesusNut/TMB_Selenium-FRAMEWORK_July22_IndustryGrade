@@ -103,7 +103,7 @@ public final class DateTimeUtils {
 
 		catch (DateTimeException e) {
 
-			throw new FrameworkException("JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Incorrect ZoneID ["
+			throw new FrameworkException("JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Incorrect ZoneID ["
 					+ zoneId + "] provided. Please refer http://joda-time.sourceforge.net/timezones.html.", e);
 
 		}

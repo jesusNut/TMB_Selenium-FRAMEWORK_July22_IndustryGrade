@@ -74,7 +74,7 @@ public final class LocalDriverFactory {
 		else {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] supports only 'firefox'/'edge'/'chrome' at the moment. Please enter valid Browser value");
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] supports only 'firefox'/'edge'/'chrome' at the moment. Please enter valid Browser value");
 		}
 
 		return driver;

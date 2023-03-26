@@ -58,7 +58,7 @@ public final class ConfigFactory {
 		if (((Objects.isNull(environmentValue)) || environmentValue.isBlank())) {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Either user has provided [environment] key as blank or has not provided at all; through System properties/System environment/Config.properties files. \n Please provide a valid environment. Allowed values are ['qa'/'dev'/'uat']");
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Either user has provided [environment] key as blank or has not provided at all; through System properties/System environment/Config.properties files. \n Please provide a valid environment. Allowed values are ['qa'/'dev'/'uat']");
 
 		}
 
@@ -93,7 +93,7 @@ public final class ConfigFactory {
 
 		else {
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> [environment] key value provided by user is wrong. Allowed values are ['qa'/'dev'/'uat'] OR \n [url] key provided through System properties/System environment/Config.properties files is either missing/commented out or blank. Please provide a valid url ");
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> [environment] key value provided by user is wrong. Allowed values are ['qa'/'dev'/'uat'] OR \n [url] key provided through System properties/System environment/Config.properties files is either missing/commented out or blank. Please provide a valid url ");
 		}
 
 	}
@@ -125,7 +125,7 @@ public final class ConfigFactory {
 
 		else {
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> [browser] key provided through System properties/System environment/Config.properties files is either missing/commented out or blank. Please provide a valid browser");
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> [browser] key provided through System properties/System environment/Config.properties files is either missing/commented out or blank. Please provide a valid browser");
 		}
 
 	}
@@ -154,7 +154,7 @@ public final class ConfigFactory {
 		} catch (UnsupportedOperationException | NullPointerException e) {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Please enter correct values [true/false] for [customizedReport] key in System properties/System environment/config.properties files. Entered value is either blank or incorrect OR \n [customizedReport] key provided through System properties/System environment/Config.properties files is either missing/commented out",
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Please enter correct values [true/false] for [customizedReport] key in System properties/System environment/config.properties files. Entered value is either blank or incorrect OR \n [customizedReport] key provided through System properties/System environment/Config.properties files is either missing/commented out",
 					e);
 
 		}
@@ -186,7 +186,7 @@ public final class ConfigFactory {
 		} catch (UnsupportedOperationException | NullPointerException e) {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Please enter correct values [true/false] for [passedStepsScreenshots] key in System properties/System environment/config.properties files. Entered value is either blank or incorrect OR \n [passedStepsScreenshots] key provided through System properties/System environment/Config.properties files is either missing/commented out",
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Please enter correct values [true/false] for [passedStepsScreenshots] key in System properties/System environment/config.properties files. Entered value is either blank or incorrect OR \n [passedStepsScreenshots] key provided through System properties/System environment/Config.properties files is either missing/commented out",
 					e);
 
 		}
@@ -219,7 +219,7 @@ public final class ConfigFactory {
 		} catch (UnsupportedOperationException | NullPointerException e) {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Please enter correct values [true/false] for [overrideReports] key in System properties/System environment/config.properties files. Entered value is either blank or incorrect OR \n [overrideReports] key provided through System properties/System environment/Config.properties files is either missing/commented out",
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Please enter correct values [true/false] for [overrideReports] key in System properties/System environment/config.properties files. Entered value is either blank or incorrect OR \n [overrideReports] key provided through System properties/System environment/Config.properties files is either missing/commented out",
 					e);
 
 		}
@@ -252,7 +252,7 @@ public final class ConfigFactory {
 		} catch (UnsupportedOperationException | NullPointerException e) {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Please enter correct values [true/false] for [highlightElements] key in System properties/System environment/config.properties files. Entered value is either blank or incorrect OR \n [highlightElements] key provided through System properties/System environment/Config.properties files is either missing/commented out",
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Please enter correct values [true/false] for [highlightElements] key in System properties/System environment/config.properties files. Entered value is either blank or incorrect OR \n [highlightElements] key provided through System properties/System environment/Config.properties files is either missing/commented out",
 					e);
 
 		}
@@ -284,7 +284,7 @@ public final class ConfigFactory {
 
 		else {
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> [username] for the AUT provided through System properties/System environment/Config.properties files is either missing/commented out or blank. Please provide a valid username");
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> [username] for the AUT provided through System properties/System environment/Config.properties files is either missing/commented out or blank. Please provide a valid username");
 		}
 
 	}
@@ -314,7 +314,7 @@ public final class ConfigFactory {
 
 		else {
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> [password] for the AUT provided through System properties/System environment/Config.properties files is either missing/commented out or blank. Please provide a valid password");
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> [password] for the AUT provided through System properties/System environment/Config.properties files is either missing/commented out or blank. Please provide a valid password");
 		}
 
 	}
@@ -343,7 +343,7 @@ public final class ConfigFactory {
 
 		else {
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> [password] for the AUT provided through System properties/System environment/Config.properties files is either missing/commented out or blank. Please provide a valid password");
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> [password] for the AUT provided through System properties/System environment/Config.properties files is either missing/commented out or blank. Please provide a valid password");
 		}
 
 	}
@@ -375,7 +375,7 @@ public final class ConfigFactory {
 		} catch (UnsupportedOperationException | NullPointerException e) {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Please enter correct values [true/false] for [remote] key in System properties/System environment/config.properties files. Entered value is either blank or incorrect OR \n [remote] key provided through System properties/System environment/Config.properties files is either missing/commented out",
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Please enter correct values [true/false] for [remote] key in System properties/System environment/config.properties files. Entered value is either blank or incorrect OR \n [remote] key provided through System properties/System environment/Config.properties files is either missing/commented out",
 					e);
 
 		}
@@ -409,7 +409,7 @@ public final class ConfigFactory {
 
 		else {
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>>  [remoteURL] key provided through System properties/System environment/Config.properties files is either missing/commented out or blank. Please provide a valid remote url ");
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>>  [remoteURL] key provided through System properties/System environment/Config.properties files is either missing/commented out or blank. Please provide a valid remote url ");
 		}
 
 	}
@@ -439,7 +439,7 @@ public final class ConfigFactory {
 		} catch (UnsupportedOperationException | NullPointerException e) {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Please enter correct values [true/false] for [headless] key in System properties/System environment/config.properties files. Entered value is either blank or incorrect OR \n [headless] key provided through System properties/System environment/Config.properties files is either missing/commented out",
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Please enter correct values [true/false] for [headless] key in System properties/System environment/config.properties files. Entered value is either blank or incorrect OR \n [headless] key provided through System properties/System environment/Config.properties files is either missing/commented out",
 					e);
 
 		}
@@ -473,7 +473,7 @@ public final class ConfigFactory {
 		} catch (UnsupportedOperationException | NullPointerException e) {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Please enter correct values [true/false] for [incognito] key in System properties/System environment/config.properties files. Entered value is either blank or incorrect OR \n [incognito] key provided through System properties/System environment/Config.properties files is either missing/commented out",
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Please enter correct values [true/false] for [incognito] key in System properties/System environment/config.properties files. Entered value is either blank or incorrect OR \n [incognito] key provided through System properties/System environment/Config.properties files is either missing/commented out",
 					e);
 
 		}

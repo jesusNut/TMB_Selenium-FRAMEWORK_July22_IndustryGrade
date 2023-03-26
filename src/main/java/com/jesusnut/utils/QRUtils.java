@@ -51,7 +51,7 @@ public final class QRUtils {
 		} catch (IOException | NotFoundException e) {
 
 			throw new FrameworkException(
-					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB ©] >>> Issue while reading QR code.", e);
+					"JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Issue while reading QR code.", e);
 
 		}
 
