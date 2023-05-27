@@ -137,29 +137,29 @@ public class GenericTest extends BaseTest {
 		Ignitor.navigateToURL("http://omayo.blogspot.com/");
 		Ignitor.doSendKeys(By.xpath("//textarea[@id='ta1']"), "Abhishek is great", "textboxxx");
 
-//		// check chrome and edge browser permissions - geolocation allow
-//
-//		Ignitor.navigateToURL("https://whatmylocation.com/");
-//		SmartWaitUtils.sleep(5);
-//
-//		// check chrome and edge browser permissions - mic allow
-//
-//		Ignitor.navigateToURL("https://mictests.com/");
-//		SmartWaitUtils.waitForPageLoaded();
-//		Ignitor.waitForElementAttributeToContain(By.xpath("//div[@id='mic-controls']"), "mic control checker", "style",
-//				"block");
-//		Ignitor.waitForElementTextToContain(By.xpath("//button[@id='mic-launcher']"), "micbutton", "Test my mic");
-//		Ignitor.doClick(By.xpath("//button[@id='mic-launcher']"), "micbutton");
-//		SmartWaitUtils.sleep(10);
-//
-//		// check chrome and edge browser permissions - camera allow
-//
-//		Ignitor.launchURL("https://webcamtests.com/");
-//		SmartWaitUtils.waitForPageLoaded();
-//		Ignitor.waitForElementTextToBe(By.xpath("//button[@id='webcam-launcher']"), "Test my cam button",
-//				"Test my cam");
-//		Ignitor.doClick(By.xpath("//button[@id='webcam-launcher']"), "Test my cam button");
-//		SmartWaitUtils.sleep(10);
+		// check chrome and edge browser permissions - geolocation allow
+
+		Ignitor.navigateToURL("https://whatmylocation.com/");
+		SmartWaitUtils.sleep(5);
+
+		// check chrome and edge browser permissions - mic allow
+
+		Ignitor.navigateToURL("https://mictests.com/");
+		SmartWaitUtils.waitForPageLoaded();
+		Ignitor.waitForElementAttributeToContain(By.xpath("//div[@id='mic-controls']"), "mic control checker", "style",
+				"block");
+		Ignitor.waitForElementTextToContain(By.xpath("//button[@id='mic-launcher']"), "micbutton", "Test my mic");
+		Ignitor.doClick(By.xpath("//button[@id='mic-launcher']"), "micbutton");
+		SmartWaitUtils.sleep(10);
+
+		// check chrome and edge browser permissions - camera allow
+
+		Ignitor.launchURL("https://webcamtests.com/");
+		SmartWaitUtils.waitForPageLoaded();
+		Ignitor.waitForElementTextToBe(By.xpath("//button[@id='webcam-launcher']"), "Test my cam button",
+				"Test my cam");
+		Ignitor.doClick(By.xpath("//button[@id='webcam-launcher']"), "Test my cam button");
+		SmartWaitUtils.sleep(10);
 
 	}
 
@@ -174,29 +174,29 @@ public class GenericTest extends BaseTest {
 		Ignitor.doSendKeys(By.xpath("//textarea[@id='ta1']"), "Abhishek is great", "textboxxx");
 		SmartWaitUtils.sleep(5);
 
-//		// check chrome and edge browser permissions - geolocation allow
-//
-//		Ignitor.navigateToURL("https://whatmylocation.com/");
-//		SmartWaitUtils.sleep(9);
-//
-//		// check chrome and edge browser permissions - mic allow
-//
-//		Ignitor.navigateToURL("https://mictests.com/");
-//		SmartWaitUtils.waitForPageLoaded();
-//		Ignitor.waitForElementAttributeToContain(By.xpath("//div[@id='mic-controls']"), "mic control checker", "style",
-//				"block");
-//		Ignitor.waitForElementTextToContain(By.xpath("//button[@id='mic-launcher']"), "micbutton", "Test my mic");
-//		Ignitor.doClick(By.xpath("//button[@id='mic-launcher']"), "micbutton");
-//		SmartWaitUtils.sleep(10);
-//
-//		// check chrome and edge browser permissions - camera allow
-//
-//		Ignitor.launchURL("https://webcamtests.com/");
-//		SmartWaitUtils.waitForPageLoaded();
-//		Ignitor.waitForElementTextToBe(By.xpath("//button[@id='webcam-launcher']"), "Test my cam button",
-//				"Test my cam");
-//		Ignitor.doClick(By.xpath("//button[@id='webcam-launcher']"), "Test my cam button");
-//		SmartWaitUtils.sleep(10);
+		// check chrome and edge browser permissions - geolocation allow
+
+		Ignitor.navigateToURL("https://whatmylocation.com/");
+		SmartWaitUtils.sleep(9);
+
+		// check chrome and edge browser permissions - mic allow
+
+		Ignitor.navigateToURL("https://mictests.com/");
+		SmartWaitUtils.waitForPageLoaded();
+		Ignitor.waitForElementAttributeToContain(By.xpath("//div[@id='mic-controls']"), "mic control checker", "style",
+				"block");
+		Ignitor.waitForElementTextToContain(By.xpath("//button[@id='mic-launcher']"), "micbutton", "Test my mic");
+		Ignitor.doClick(By.xpath("//button[@id='mic-launcher']"), "micbutton");
+		SmartWaitUtils.sleep(10);
+
+		// check chrome and edge browser permissions - camera allow
+
+		Ignitor.launchURL("https://webcamtests.com/");
+		SmartWaitUtils.waitForPageLoaded();
+		Ignitor.waitForElementTextToBe(By.xpath("//button[@id='webcam-launcher']"), "Test my cam button",
+				"Test my cam");
+		Ignitor.doClick(By.xpath("//button[@id='webcam-launcher']"), "Test my cam button");
+		SmartWaitUtils.sleep(10);
 
 	}
 

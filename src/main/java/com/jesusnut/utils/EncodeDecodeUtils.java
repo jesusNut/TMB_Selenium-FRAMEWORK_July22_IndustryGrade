@@ -1,13 +1,12 @@
 package com.jesusnut.utils;
 
+import java.util.Arrays;
 import java.util.Base64;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
-
-import org.bouncycastle.util.Arrays;
 
 import com.jesusnut.exception.FrameworkException;
 
@@ -101,8 +100,7 @@ public final class EncodeDecodeUtils {
 
 		} catch (Exception e) {
 
-			throw new FrameworkException("JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Error while decrypting",
-					e);
+			throw new FrameworkException("JESUSNUT SELENIUM FRAMEWORK [Powered by TMB] >>> Error while decrypting", e);
 		}
 
 	}

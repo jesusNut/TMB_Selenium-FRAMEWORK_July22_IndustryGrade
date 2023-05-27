@@ -34,8 +34,25 @@ public final class LocalDriverFactory {
 	 * Returns WebDriver instance loaded with browser options (from
 	 * {@link BrowserOptionsFactory}) based on browserName; for execution in local.
 	 * <br>
-	 * Sets browser driver executable using {@link WebDriverManager}.<br>
+	 * <br>
+	 * In THEORY, Before Selenium 4.6.0, SDETs used to set browser driver executable
+	 * using {@link WebDriverManager}(BONI GARCIA @
+	 * https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager).<br>
+	 * <br>
+	 * IN THEORY, From Selenium 4.6.0 onwards, No need to set up Driver executables.
+	 * <br>
+	 * Selenium uses 'SELENIUM MANAGER' now to configue browser drivers
+	 * automatically based on browser versions installed. <br>
+	 * <br>
+	 * <b>But still {@link WebDriverManager} (BONI GARCIA @
+	 * https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager) is
+	 * used below in code as 'SELENIUM MANAGER' FEATURE IS IN BETA.</b> <br>
 	 * 
+	 * @see <a href=
+	 *      "https://www.selenium.dev/blog/2022/introducing-selenium-manager/">Selenium
+	 *      Manager Intro</a> <br>
+	 * @see <a href= "https://www.youtube.com/watch?v=M3RyBvUTOpk&t=1080s">Selenium
+	 *      Manager Youtube</a> <br>
 	 * 
 	 * @param browserName - name of browser on which test methods need to run
 	 * @return WebDriver instance for execution in local loaded with Browser
@@ -49,6 +66,12 @@ public final class LocalDriverFactory {
 		WebDriver driver;
 
 		if (browserName.trim().equalsIgnoreCase(BrowserType.FIREFOX.getBrowserName())) {
+
+			// In Theory, Use WebDriverManager dependency from 'io.github.bonigarcia' only
+			// if using
+			// Selenium versions < 4.6.0
+			// BUT, RIGHT NOW USING : 'WebDriverManager.XXXXXdriver().setup();' for all
+			// browser types as 'SELENIUM MANAGER' FEATURE IS IN BETA.
 
 			WebDriverManager.firefoxdriver().setup();
 

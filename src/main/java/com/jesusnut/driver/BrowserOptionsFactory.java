@@ -5,9 +5,9 @@ import java.util.HashMap;
 
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.firefox.GeckoDriverService;
 import org.openqa.selenium.remote.AbstractDriverOptions;
 
 import com.jesusnut.config.ConfigFactory;
@@ -62,7 +62,7 @@ public final class BrowserOptionsFactory {
 			((FirefoxOptions) driverOptions).setProfile(setFirefoxBasedBrowserPermissions());
 			driverOptions.setCapability(BROWSERNAME, browserName);
 			driverOptions.setAcceptInsecureCerts(true);
-			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "/dev/null");
+			System.setProperty(GeckoDriverService.GECKO_DRIVER_LOG_PROPERTY, "/dev/null");
 			checkAndGetHeadlessCapabilities(BrowserType.FIREFOX, driverOptions);
 			checkAndGetIncognitoCapabilities(BrowserType.FIREFOX, driverOptions);
 			((FirefoxOptions) driverOptions).setProfile(setFirefoxBasedBrowserPermissions());
@@ -76,6 +76,7 @@ public final class BrowserOptionsFactory {
 			driverOptions.setCapability(BROWSERNAME, "MicrosoftEdge");
 			((EdgeOptions) driverOptions).setExperimentalOption("excludeSwitches",
 					Collections.singletonList("enable-automation"));
+			((EdgeOptions) driverOptions).setAcceptInsecureCerts(true);
 			((EdgeOptions) driverOptions).setExperimentalOption("prefs", prefs);
 
 			checkAndGetHeadlessCapabilities(BrowserType.EDGE, driverOptions);
@@ -91,7 +92,6 @@ public final class BrowserOptionsFactory {
 
 			driverOptions.setCapability(BROWSERNAME, browserName);
 			driverOptions.setCapability("se:recordVideo", true);
-			((ChromeOptions) driverOptions).addArguments("--remote-allow-origins=*");
 			((ChromeOptions) driverOptions).setExperimentalOption("excludeSwitches",
 					Collections.singletonList("enable-automation"));
 			((ChromeOptions) driverOptions).setAcceptInsecureCerts(true);
@@ -168,21 +168,21 @@ public final class BrowserOptionsFactory {
 
 			if (("firefox").equalsIgnoreCase(browserType.getBrowserName())) {
 
-				((FirefoxOptions) driverOptions).setHeadless(true);
+				((FirefoxOptions) driverOptions).addArguments("-headless");
 				((FirefoxOptions) driverOptions).addArguments(ARG_SET_WINDOW_SIZE_1920X1080);
 				((FirefoxOptions) driverOptions).addArguments(ARG_DISABLE_SANDBOX);
 				((FirefoxOptions) driverOptions).addArguments(ARG_DISABLE_GPU);
 
 			} else if (("edge").equalsIgnoreCase(browserType.getBrowserName())) {
 
-				((EdgeOptions) driverOptions).setHeadless(true);
+				((EdgeOptions) driverOptions).addArguments("--headless=new");
 				((EdgeOptions) driverOptions).addArguments(ARG_SET_WINDOW_SIZE_1920X1080);
 				((EdgeOptions) driverOptions).addArguments(ARG_DISABLE_SANDBOX);
 				((EdgeOptions) driverOptions).addArguments(ARG_DISABLE_GPU);
 
 			} else if (("chrome").equalsIgnoreCase(browserType.getBrowserName())) {
 
-				((ChromeOptions) driverOptions).setHeadless(true);
+				((ChromeOptions) driverOptions).addArguments("--headless=new");
 				((ChromeOptions) driverOptions).addArguments(ARG_SET_WINDOW_SIZE_1920X1080);
 				((ChromeOptions) driverOptions).addArguments(ARG_DISABLE_SANDBOX);
 				((ChromeOptions) driverOptions).addArguments(ARG_DISABLE_GPU);
