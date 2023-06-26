@@ -18,6 +18,7 @@ import com.jesusnut.utils.FakeDataUtils;
 import com.jesusnut.utils.Ignitor;
 import com.jesusnut.utils.JSUtils;
 import com.jesusnut.utils.LanguageUtils;
+import com.jesusnut.utils.PDFUtils;
 import com.jesusnut.utils.SmartWaitUtils;
 
 //This class and test methods in it does not belong to any Page on the AUT : https://naveenautomationlabs.com/opencart/index.php?route=account/login
@@ -114,6 +115,11 @@ public class GenericTest extends BaseTest {
 		BidiUtils.emulateMobileScreenResolution(390, 844, 100, true);
 		Ignitor.navigateToURL("https://www.selenium.dev/");
 		Ignitor.waitForURLToBe("https://www.selenium.dev/");
+
+		// print pdf of the current screen at this moment- PDFUtils method check
+
+		PDFUtils.printCurrentPageToPDF("SeleniumPage");
+
 		Ignitor.doClick(By.xpath("//a[@class='navbar-brand']/following-sibling::button"), "Hamburger Menu");
 		Ignitor.waitForElementAttributeToContain(By.xpath("//div[@id='main_navbar']"), "Hamburger expanded", "class",
 				"show");
