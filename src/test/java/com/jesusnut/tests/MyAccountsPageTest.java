@@ -17,7 +17,8 @@ import com.jesusnut.pages.MyAccountsPage;
 public class MyAccountsPageTest extends BaseTest {
 
 	@FrameworkAnnotation(category = { Category.REGRESSION })
-	@Test(description = "To check whether text of FirstHeader Of LeftMenu on MyAccountsPage after login is correct or not", groups = {"Regression"})
+	@Test(description = "To check whether text of FirstHeader Of LeftMenu on MyAccountsPage after login is correct or not", groups = {
+			"Regression" })
 
 	public void verifyTextOfFirstHeaderOfLeftMenuTest() {
 
@@ -34,7 +35,8 @@ public class MyAccountsPageTest extends BaseTest {
 	}
 
 	@FrameworkAnnotation(category = { Category.REGRESSION })
-	@Test(description = "To verify if title of logo on Top Menu on MyAccountsPage after login is correct or not", groups = {"Regression"})
+	@Test(description = "To verify if title of logo on Top Menu on MyAccountsPage after login is correct or not", groups = {
+			"Regression" })
 
 	public void verifyTitleOfLogOnTopMenuOnMyAccountsPageTest() {
 
@@ -50,7 +52,8 @@ public class MyAccountsPageTest extends BaseTest {
 	}
 
 	@FrameworkAnnotation(category = { Category.REGRESSION })
-	@Test(description = "To verify if company name of Powered By link at footer on MyAccounts Page after login is correct or not",  groups = {"Regression"})
+	@Test(description = "To verify if company name of Powered By link at footer on MyAccounts Page after login is correct or not", groups = {
+			"Regression" })
 
 	public void verifyNameOfCompanyOnPoweredByLinkAtFooterTest() {
 
@@ -66,7 +69,7 @@ public class MyAccountsPageTest extends BaseTest {
 	}
 
 	@FrameworkAnnotation(category = { Category.REGRESSION })
-	@Test(description = "To verify title of MyAccounts Page", groups = {"Regression"})
+	@Test(description = "To verify title of MyAccounts Page", groups = { "Regression" })
 
 	public void verifyMyAccountsPageTitleTest() {
 
@@ -81,7 +84,8 @@ public class MyAccountsPageTest extends BaseTest {
 	}
 
 	@FrameworkAnnotation(category = { Category.REGRESSION })
-	@Test(description = "To verify category names e.g -desktop, laptop and Notebooks etc. on Top Menu Nav Bar under logo on MyAccountsPage", groups = {"Regression"})
+	@Test(description = "To verify category names e.g -desktop, laptop and Notebooks etc. on Top Menu Nav Bar under logo on MyAccountsPage", groups = {
+			"Regression" })
 
 	public void verifyCatgeoryNamesTopMenuNavBar() {
 

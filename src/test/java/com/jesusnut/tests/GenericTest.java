@@ -48,6 +48,7 @@ public class GenericTest extends BaseTest {
 
 		SmartWaitUtils.sleep(2);
 		Ignitor.navigateToURL("http://omayo.blogspot.com/");
+		PDFUtils.printCurrentPageToPDF("OmayoPage");
 		SmartWaitUtils.sleep(2);
 		JSUtils.navigateBackUsingJS();
 		SmartWaitUtils.sleep(2);
@@ -59,6 +60,7 @@ public class GenericTest extends BaseTest {
 		System.out.println("Print values test executed successfully..");
 		Assertions.assertThat(displayStatus).isTrue();
 		SmartWaitUtils.sleep(2);
+		PDFUtils.printPageToPDF("https://www.bbc.com/", "bbcPage");
 
 	}
 
@@ -113,19 +115,18 @@ public class GenericTest extends BaseTest {
 		// emulate device size
 
 		BidiUtils.emulateMobileScreenResolution(390, 844, 100, true);
-		Ignitor.navigateToURL("https://www.selenium.dev/");
-		Ignitor.waitForURLToBe("https://www.selenium.dev/");
+		Ignitor.navigateToURL("https://rahulshettyacademy.com/angularAppdemo/");
+		Ignitor.waitForURLToBe("https://rahulshettyacademy.com/angularAppdemo/");
 
 		// print pdf of the current screen at this moment- PDFUtils method check
 
-		PDFUtils.printCurrentPageToPDF("SeleniumPage");
+		PDFUtils.printCurrentPageToPDF("RSPage");
 
-		Ignitor.doClick(By.xpath("//a[@class='navbar-brand']/following-sibling::button"), "Hamburger Menu");
-		Ignitor.waitForElementAttributeToContain(By.xpath("//div[@id='main_navbar']"), "Hamburger expanded", "class",
-				"show");
-		int temp_count = Ignitor.getElementsCount(
-				By.xpath("//div[@id='main_navbar']/ul/li[not(@class='nav-item dropdown d-none d-lg-block')]/a"));
-		Assertions.assertThat(temp_count).isEqualTo(6);
+		Ignitor.doClick(By.xpath("//button[@aria-label='Toggle navigation']"), "Hamburger Menu");
+		Ignitor.waitForElementAttributeToContain(By.xpath("//button[@aria-label='Toggle navigation']"),
+				"Hamburger expanded", "aria-expanded", "true");
+		int temp_count = Ignitor.getElementsCount(By.xpath("//div[@id='navbarSupportedContent']/ul/li/a"));
+		Assertions.assertThat(temp_count).isEqualTo(3);
 		SmartWaitUtils.sleep(5);
 
 		// emulate geo-location

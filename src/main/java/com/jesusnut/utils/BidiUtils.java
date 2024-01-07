@@ -11,9 +11,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chromium.ChromiumDriver;
 import org.openqa.selenium.devtools.DevTools;
 import org.openqa.selenium.devtools.HasDevTools;
-import org.openqa.selenium.devtools.v113.emulation.Emulation;
-import org.openqa.selenium.devtools.v113.network.Network;
-import org.openqa.selenium.devtools.v113.network.model.ConnectionType;
+import org.openqa.selenium.devtools.v119.emulation.Emulation;
+import org.openqa.selenium.devtools.v119.network.Network;
+import org.openqa.selenium.devtools.v119.network.model.ConnectionType;
 import org.openqa.selenium.remote.Augmenter;
 
 import com.jesusnut.config.ConfigFactory;

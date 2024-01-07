@@ -78,6 +78,7 @@ public final class BrowserOptionsFactory {
 					Collections.singletonList("enable-automation"));
 			((EdgeOptions) driverOptions).setAcceptInsecureCerts(true);
 			((EdgeOptions) driverOptions).setExperimentalOption("prefs", prefs);
+			((EdgeOptions) driverOptions).addArguments("--remote-allow-origins=*");
 
 			checkAndGetHeadlessCapabilities(BrowserType.EDGE, driverOptions);
 			checkAndGetIncognitoCapabilities(BrowserType.EDGE, driverOptions);
@@ -96,6 +97,7 @@ public final class BrowserOptionsFactory {
 					Collections.singletonList("enable-automation"));
 			((ChromeOptions) driverOptions).setAcceptInsecureCerts(true);
 			((ChromeOptions) driverOptions).setExperimentalOption("prefs", prefs);
+			((ChromeOptions) driverOptions).addArguments("--remote-allow-origins=*");
 			checkAndGetHeadlessCapabilities(BrowserType.CHROME, driverOptions);
 			checkAndGetIncognitoCapabilities(BrowserType.CHROME, driverOptions);
 		}

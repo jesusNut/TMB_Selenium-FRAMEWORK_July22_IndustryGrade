@@ -12,22 +12,21 @@
         <maven.compiler.target>11</maven.compiler.target>
         <testdatasupplier.version>1.9.7</testdatasupplier.version>
         <aspectj.version>1.9.9.1</aspectj.version>
-        <testNG.version>7.8.0</testNG.version>
-        <selenium.version>4.10.0</selenium.version>
-        <selenium-devtools.version>4.9.1</selenium-devtools.version>
-        <webdrivermanager.version>5.3.0</webdrivermanager.version>
-        <extentreports.version>5.0.9</extentreports.version>
-        <poi.version>5.2.2</poi.version>
-        <poi-ooxml.version>5.2.2</poi-ooxml.version>
+        <testNG.version>7.9.0</testNG.version>
+        <selenium.version>4.16.1</selenium.version>
+        <webdrivermanager.version>5.6.3</webdrivermanager.version>
+        <extentreports.version>5.1.1</extentreports.version>
+        <poi.version>5.2.5</poi.version>
+        <poi-ooxml.version>5.2.5</poi-ooxml.version>
         <owner-java8.version>1.0.12</owner-java8.version>
         <javafaker.version>1.0.2</javafaker.version>
-        <assertj-core.version>3.24.2</assertj-core.version>
+        <assertj-core.version>3.25.1</assertj-core.version>
         <selenium-shutterbug.version>1.6</selenium-shutterbug.version>
-        <lombok.version>1.18.28</lombok.version>
-        <zxing.version>3.5.0</zxing.version>
+        <lombok.version>1.18.30</lombok.version>
+        <zxing.version>3.5.2</zxing.version>
         <slf4j.version>2.0.3</slf4j.version>
         <slf4jsimple.version>2.0.3</slf4jsimple.version>
-        <zxingjavase.version>3.5.0</zxingjavase.version>
+        <zxingjavase.version>3.5.2</zxingjavase.version>
 
 
     </properties>
@@ -148,7 +147,7 @@
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>${selenium.version}</version>
-        </dependency> 
+        </dependency>
 
 
         <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
@@ -156,7 +155,7 @@
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>${webdrivermanager.version}</version>
-        </dependency> 
+        </dependency>
 
         <!-- Extent report dependency -->
 
@@ -262,13 +261,6 @@
             <version>${slf4jsimple.version}</version>
         </dependency>
 
-        <!-- To run Chrome Dev tool related tests on chrome browser version 111.XXXX-->
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-devtools-v111 -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-devtools-v111</artifactId>
-            <version>${selenium-devtools.version}</version>
-        </dependency>
 
 
     </dependencies>
