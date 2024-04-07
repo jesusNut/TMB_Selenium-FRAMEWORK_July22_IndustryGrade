@@ -11,9 +11,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chromium.ChromiumDriver;
 import org.openqa.selenium.devtools.DevTools;
 import org.openqa.selenium.devtools.HasDevTools;
-import org.openqa.selenium.devtools.v119.emulation.Emulation;
-import org.openqa.selenium.devtools.v119.network.Network;
-import org.openqa.selenium.devtools.v119.network.model.ConnectionType;
+import org.openqa.selenium.devtools.v121.emulation.Emulation;
+import org.openqa.selenium.devtools.v121.network.Network;
+import org.openqa.selenium.devtools.v121.network.model.ConnectionType;
 import org.openqa.selenium.remote.Augmenter;
 
 import com.jesusnut.config.ConfigFactory;
@@ -77,7 +77,7 @@ public final class BidiUtils {
 			devTools.createSession();
 			devTools.send(Emulation.setDeviceMetricsOverride(width, height, deviceScaleFactor, mobile, Optional.empty(),
 					Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(),
-					Optional.empty(), Optional.empty(), Optional.empty()));
+					Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty()));
 			ExtentLogger.info("Emulated Mobile Device with dimension " + width + "X" + height);
 		}
 
@@ -89,7 +89,7 @@ public final class BidiUtils {
 			devTools.createSession();
 			devTools.send(Emulation.setDeviceMetricsOverride(width, height, deviceScaleFactor, mobile, Optional.empty(),
 					Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(),
-					Optional.empty(), Optional.empty(), Optional.empty()));
+					Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty()));
 			ExtentLogger.info("Emulated Mobile Device with dimension " + width + "X" + height);
 
 		}
