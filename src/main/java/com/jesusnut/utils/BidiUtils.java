@@ -11,9 +11,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chromium.ChromiumDriver;
 import org.openqa.selenium.devtools.DevTools;
 import org.openqa.selenium.devtools.HasDevTools;
-import org.openqa.selenium.devtools.v121.emulation.Emulation;
-import org.openqa.selenium.devtools.v121.network.Network;
-import org.openqa.selenium.devtools.v121.network.model.ConnectionType;
+import org.openqa.selenium.devtools.v133.emulation.Emulation;
+import org.openqa.selenium.devtools.v133.network.Network;
+import org.openqa.selenium.devtools.v133.network.model.ConnectionType;
 import org.openqa.selenium.remote.Augmenter;
 
 import com.jesusnut.config.ConfigFactory;
@@ -127,7 +127,8 @@ public final class BidiUtils {
 			DevTools devTools = ((ChromiumDriver) TLDriverManager.getDriver()).getDevTools();
 			devTools.createSession();
 			devTools.send(
-					Network.emulateNetworkConditions(false, 150, 2500, 2000, Optional.of(ConnectionType.CELLULAR2G)));
+					Network.emulateNetworkConditions(false, 150, 2500, 2000, Optional.of(ConnectionType.CELLULAR2G),
+							java.util.Optional.empty(), java.util.Optional.empty(), java.util.Optional.empty()));
 			ExtentLogger.info("Emulated Cellular 2G Network");
 		}
 
@@ -137,7 +138,8 @@ public final class BidiUtils {
 			DevTools devTools = ((HasDevTools) driver).getDevTools();
 			devTools.createSession();
 			devTools.send(
-					Network.emulateNetworkConditions(false, 150, 2500, 2000, Optional.of(ConnectionType.CELLULAR2G)));
+					Network.emulateNetworkConditions(false, 150, 2500, 2000, Optional.of(ConnectionType.CELLULAR2G),
+							java.util.Optional.empty(), java.util.Optional.empty(), java.util.Optional.empty()));
 			ExtentLogger.info("Emulated Cellular 2G Network");
 		}
 	}
@@ -149,7 +151,8 @@ public final class BidiUtils {
 			DevTools devTools = ((ChromiumDriver) TLDriverManager.getDriver()).getDevTools();
 			devTools.createSession();
 			devTools.send(
-					Network.emulateNetworkConditions(false, 150, 2500, 2000, Optional.of(ConnectionType.CELLULAR3G)));
+					Network.emulateNetworkConditions(false, 150, 2500, 2000, Optional.of(ConnectionType.CELLULAR3G),
+							java.util.Optional.empty(), java.util.Optional.empty(), java.util.Optional.empty()));
 			ExtentLogger.info("Emulated Cellular 3G Network");
 		}
 
@@ -159,7 +162,8 @@ public final class BidiUtils {
 			DevTools devTools = ((HasDevTools) driver).getDevTools();
 			devTools.createSession();
 			devTools.send(
-					Network.emulateNetworkConditions(false, 150, 2500, 2000, Optional.of(ConnectionType.CELLULAR3G)));
+					Network.emulateNetworkConditions(false, 150, 2500, 2000, Optional.of(ConnectionType.CELLULAR3G),
+							java.util.Optional.empty(), java.util.Optional.empty(), java.util.Optional.empty()));
 			ExtentLogger.info("Emulated Cellular 3G Network");
 		}
 	}
@@ -171,7 +175,8 @@ public final class BidiUtils {
 			DevTools devTools = ((ChromiumDriver) TLDriverManager.getDriver()).getDevTools();
 			devTools.createSession();
 			devTools.send(
-					Network.emulateNetworkConditions(false, 150, 2500, 2000, Optional.of(ConnectionType.CELLULAR4G)));
+					Network.emulateNetworkConditions(false, 150, 2500, 2000, Optional.of(ConnectionType.CELLULAR4G),
+							java.util.Optional.empty(), java.util.Optional.empty(), java.util.Optional.empty()));
 			ExtentLogger.info("Emulated Cellular 4G Network");
 		}
 
@@ -181,7 +186,8 @@ public final class BidiUtils {
 			DevTools devTools = ((HasDevTools) driver).getDevTools();
 			devTools.createSession();
 			devTools.send(
-					Network.emulateNetworkConditions(false, 150, 2500, 2000, Optional.of(ConnectionType.CELLULAR4G)));
+					Network.emulateNetworkConditions(false, 150, 2500, 2000, Optional.of(ConnectionType.CELLULAR4G),
+							java.util.Optional.empty(), java.util.Optional.empty(), java.util.Optional.empty()));
 			ExtentLogger.info("Emulated Cellular 4G Network");
 		}
 	}
@@ -192,7 +198,8 @@ public final class BidiUtils {
 			checkLocalDriverType();
 			DevTools devTools = ((ChromiumDriver) TLDriverManager.getDriver()).getDevTools();
 			devTools.createSession();
-			devTools.send(Network.emulateNetworkConditions(true, 150, 2500, 2000, Optional.of(ConnectionType.WIFI)));
+			devTools.send(Network.emulateNetworkConditions(true, 150, 2500, 2000, Optional.of(ConnectionType.WIFI),
+					java.util.Optional.empty(), java.util.Optional.empty(), java.util.Optional.empty()));
 			ExtentLogger.info("Emulated Offline Network");
 		}
 
@@ -201,7 +208,8 @@ public final class BidiUtils {
 			WebDriver driver = new Augmenter().augment(TLDriverManager.getDriver());
 			DevTools devTools = ((HasDevTools) driver).getDevTools();
 			devTools.createSession();
-			devTools.send(Network.emulateNetworkConditions(false, 150, 2500, 2000, Optional.of(ConnectionType.WIFI)));
+			devTools.send(Network.emulateNetworkConditions(false, 150, 2500, 2000, Optional.of(ConnectionType.WIFI),
+					java.util.Optional.empty(), java.util.Optional.empty(), java.util.Optional.empty()));
 			ExtentLogger.info("Emulated Offline Network");
 		}
 	}

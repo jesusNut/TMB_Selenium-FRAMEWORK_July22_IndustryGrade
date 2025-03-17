@@ -676,7 +676,7 @@ public final class Ignitor {
 
 	public static String getAttributeValue(By locator, String attributeName) {
 
-		String attributeValue = getElement(locator, WaitStrategy.PRESENCE).getAttribute(attributeName);
+		String attributeValue = getElement(locator, WaitStrategy.PRESENCE).getDomAttribute(attributeName);
 		ExtentLogger.pass(
 				" [ " + attributeValue + " ] derived from the WebElement for attribute - \'" + attributeName + "\'");
 		return attributeValue;

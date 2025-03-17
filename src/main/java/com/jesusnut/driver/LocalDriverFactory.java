@@ -44,9 +44,6 @@ public final class LocalDriverFactory {
 	 * Selenium uses 'SELENIUM MANAGER' now to configue browser drivers
 	 * automatically based on browser versions installed. <br>
 	 * <br>
-	 * <b>But still {@link WebDriverManager} (BONI GARCIA @
-	 * https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager) is
-	 * used below in code as 'SELENIUM MANAGER' FEATURE IS IN BETA.</b> <br>
 	 * 
 	 * @see <a href=
 	 *      "https://www.selenium.dev/blog/2022/introducing-selenium-manager/">Selenium
@@ -70,10 +67,8 @@ public final class LocalDriverFactory {
 			// In Theory, Use WebDriverManager dependency from 'io.github.bonigarcia' only
 			// if using
 			// Selenium versions < 4.6.0
-			// BUT, RIGHT NOW USING : 'WebDriverManager.XXXXXdriver().setup();' for all
-			// browser types as 'SELENIUM MANAGER' FEATURE IS IN BETA.
 
-			WebDriverManager.firefoxdriver().setup();
+			// WebDriverManager.firefoxdriver().setup();
 
 			driver = new FirefoxDriver((FirefoxOptions) BrowserOptionsFactory.getBrowserOptions(browserName));
 
@@ -81,14 +76,14 @@ public final class LocalDriverFactory {
 
 		else if (browserName.trim().equalsIgnoreCase(BrowserType.EDGE.getBrowserName())) {
 
-			WebDriverManager.edgedriver().setup();
+			// WebDriverManager.edgedriver().setup();
 
 			driver = new EdgeDriver((EdgeOptions) BrowserOptionsFactory.getBrowserOptions(browserName));
 		}
 
 		else if (browserName.trim().equalsIgnoreCase(BrowserType.CHROME.getBrowserName())) {
 
-			WebDriverManager.chromedriver().setup();
+			// WebDriverManager.chromedriver().setup();
 
 			driver = new ChromeDriver((ChromeOptions) BrowserOptionsFactory.getBrowserOptions(browserName));
 

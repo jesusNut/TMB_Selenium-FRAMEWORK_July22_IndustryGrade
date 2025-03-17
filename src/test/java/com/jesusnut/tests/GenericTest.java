@@ -120,7 +120,7 @@ public class GenericTest extends BaseTest {
 
 		// print pdf of the current screen at this moment- PDFUtils method check
 
-		PDFUtils.printCurrentPageToPDF("RSPage");
+		// PDFUtils.printCurrentPageToPDF("RSPage");
 
 		Ignitor.doClick(By.xpath("//button[@aria-label='Toggle navigation']"), "Hamburger Menu");
 		Ignitor.waitForElementAttributeToContain(By.xpath("//button[@aria-label='Toggle navigation']"),
